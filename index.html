@@ -7,17 +7,20 @@
   <meta name="description" content="Epicode School: il punto di partenza per la tua professione di Developer.">
   <title>Epicode - Formazione Web Developer</title>
   <!-- COLLEGAMENTI -->
-  <link rel="stylesheet" href="assets/css/all.css">
-  <style>@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
 </head>
 
 <body>
- <header>
-    <img src="assets/images/logo.png" alt="Logo Epicode">
-    
-      <i class="fa-solid fa-ellipsis"></i>
+ <header>   
+      <a href="index.html" title="Home Page">
+        <img src="assets/images/logo.png" alt="Logo Epicode">
+      </a>
+
+    <label for="menu-button" id="meatballs"><i class="fa-solid fa-ellipsis"></i></label>
+    <input type="checkbox" id="menu-button">
 
     <nav>
       <ul>
@@ -36,23 +39,44 @@
       <button>Chiedi info</button>
     </section>
 
-    <section>
-      <h1>Perchè diventare un Developer?</h1>
-      <p>Non servono laurea e competenze specifiche, solo impegno. Segui il corso online, dove vuoi tu. Il lavoro che andrai a fare è veramente figo.</p>
-      <i class="fa-regular fa-comment-dots"></i>
-      <h2>Tutti ti cercheranno</h2>
-      <p>Sono 30.000 in Italia le posizioni di developer scoperte, scegli quella che ti stimola di più. Potrai lavorare dove vuoi.</p>
-      <i class="fa-solid fa-location-dot"></i>
-      <h2></i>Potrai lavorare dove vuoi</h2>
-      <p>Non serve lavorare in ufficio per essere creatori di progetti digitali, e le aziende lo sanno. Lavora da casa, in riva al mare o in montagna. Azienda, Freelance o Startup. Scegli puù facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
-      <i class="fa-solid fa-laptop-code"></i>
-      <h2>Ma chi è il developer oggi?</h2>
-      <p>Se non lo sai te lo diciamo noi: il futuro è dei developer</p>
-      <button>Scrivici</button>
+    <section id="main">
+      <div>
+        <h1>Perchè diventare<br /> un Developer?</h1>
+        <p>Non servono laurea e competenze specifiche, solo impegno.<br />
+          Segui il corso online, dove vuoi tu.<br />
+          Il lavoro che andrai a fare è veramente figo.</p>
+      </div>
+
+      <div>
+        <i class="fa-regular fa-comment-dots"></i>
+        <h2>Tutti ti cercheranno</h2>
+        <p>Sono 30.000 in Italia le posizioni di developer scoperte, scegli quella che ti stimola di più. Potrai lavorare dove vuoi.</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <h2></i>Potrai lavorare dove vuoi</h2>
+        <p>Non serve lavorare in ufficio per essere creatori di progetti digitali, e le aziende lo sanno. Lavora da casa, in riva al mare o in montagna.</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-user-astronaut"></i>
+        <h2>Azienda, Freelance o Startup.</h2>
+        <p>Scegli più facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
+      </div>
     </section>
 
- <section>
-      <!-- <img src="assets/images/notebook.jpg" alt="Laptop e Smartphone"> -->
+    <section>
+      <div id="scrivici">
+        <h2>Ma chi è il Developer oggi?</h2>
+        <p>Se non lo sai te lo diciamo noi: il futuro è dei developer</p>
+        <button>Scrivici!</button>
+      </div>
+    </section>
+
+    <img src="assets/images/notebook.jpg" alt="Laptop e Smartphone">
+
+    <section id="emoji">
       <h3><i class="fa-regular fa-face-grin"></i>Chi sarai</h3>
       <p>Il creatore delle app che usi tutti i giorni</p>
       <h3><i class="fa-regular fa-face-grin-stars"></i>Chi diventerai</h3>
@@ -64,21 +88,31 @@
   </main>
 
   <footer>
-    <p>Chi siamo</p>
-    <p>Epicode School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech.</p>
-    <p>Ti piace ciò che vedi?<br />Condividilo con i tuoi amici!</p>
-        
+    <div id="chi-siamo">
+      <p>Chi siamo</p>
+      <p>Epicode School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech.</p>
+    </div>
+    
+    <div id="social">
+      <p>Ti piace ciò che vedi?<br />Condividilo con i tuoi amici!</p>
+      <i class="fa-brands fa-facebook-square"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
     <form action="/action_page.php" method="post">
       <fieldset>
         <label for="newsletter">Iscriviti alla nostra newsletter</label><br />
-        <input type="email" id="newsletter" name="newsletter" autocomplete="on">
+        <input type="email" id="newsletter" name="newsletter" autocomplete="on"><br />
         <button type="button">Va bene!</button>
       </fieldset>
     </form>
     
-    <p>&copy; 2021 Epicode Web Developer School</p>
-    <address>- Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</address>
-  </footer>
+    <div>
+      <p>&copy; 2021 Epicode Web Developer School</p>
+      <address>- Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</address>
+    </div>
+    </footer>
 
 </body>
 
