@@ -28,7 +28,8 @@ i, a {
 
 button {
     width: fit-content;
-    background-image: -moz-linear-gradient(#6cc1e2 #392f7a);
+    color: white;
+    background-image: linear-gradient(to bottom, #6cc1e2, #392f7a);
 }
 
 /* HEADER */
@@ -43,8 +44,8 @@ header {
 }
 
 header img {
-   /*  width: 100%; */
-    align-self: flex-start;
+   /*  width: 100%;
+    align-self: flex-start; */
 }
 
 /* nav {
@@ -55,7 +56,6 @@ header img {
     color: white;
     background: grey url("../images/banner.jpg") no-repeat;
     background-size: cover;
-    margin: auto;
     padding: 2rem 1.5rem;
     box-shadow: inset 10px 10px 250px 10px #444040;
     text-shadow: 1px 1px #444040;
