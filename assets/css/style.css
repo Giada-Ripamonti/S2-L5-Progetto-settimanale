@@ -1,5 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 67.6%}
+html {font-size: 69%}
 
 body {
     margin: 0 auto;   
@@ -142,7 +142,7 @@ input#menu-button:checked ~ nav {
     line-height: 1.3;
     background: grey url("../images/banner.jpg") no-repeat center;
     background-size: cover;
-    padding: 2rem 2rem 8rem 2rem;
+    padding: 2rem;
     box-shadow: inset 10px 10px 250px 10px #444040;
     text-shadow: 1px 1px #444040;
 }
@@ -202,13 +202,53 @@ input#menu-button:checked ~ nav {
     padding: 2rem;
 }
 
+/* MAIN - CHI SIAMO */
+
+#chi-siamo {
+    padding: 3.5rem 2rem;
+    text-align: center;
+}
+
+#chi-siamo p {
+    padding: 2rem 0;
+}
+
+#chi-siamo img {
+    max-width: fit-content;
+}
+
+#table-landscape {
+    display: none;
+}
+
+#table-portrait {
+    text-align: left;
+}
+
+#table-portrait th {
+    font-weight: bold;
+    padding: 0 0.8rem;
+}
+
+#table-portrait tr:nth-child(-n+3) {
+    background-color: #d2dce7;
+}
+
+#table-portrait tr:nth-last-child(-n+3) {
+    background-color: #d2dce7;
+}
+
+#chi-siamo caption {
+    padding: 1.5rem 0;
+}
+
 /* FOOTER */
 footer {
     background-color: rgb(238, 238, 238);
     padding: 4.5rem;
 }
 
-#chi-siamo p:first-child, #social p, footer label {
+#footer-left p:first-child, #social p, footer label {
     font-size: 2.5rem;
     padding: 1rem 0;
 }
@@ -242,6 +282,8 @@ footer button {
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
+
+    /* INDEX */
     #banner {
         padding: 10rem;
     }
@@ -263,18 +305,16 @@ footer button {
     }
 
     #emoji {
-        width: 80%;
-        margin: 0 auto;
         display: grid;
-        grid-template-rows: auto auto auto;
-        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 1.5rem;
     }
 
     #emoji img {
+        max-height: fit-content;
         grid-row-start: 1;
-        grid-row-end: 4;
-        max-width: fit-content;
+        grid-row-end: 6;
     }
 
     #emoji div {
@@ -288,6 +328,44 @@ footer button {
         text-align: left;
     }
 
+    /* CHI-SIAMO */
+    #img {
+        display: flex;
+    }
+
+    #img div {
+        padding: 0 1rem;
+    }
+
+    #img img {
+        height: 60%;
+        margin: 0;
+    }
+
+    #table-portrait {
+        display: none;
+    }
+
+    #table-landscape {
+        display: inline-table;
+    }
+
+    #table-landscape th {
+        color: white;
+        background-color: #657d86;
+        text-transform: uppercase;
+        padding: 2rem;
+    }
+
+    #table-landscape td {
+        padding: 2rem;
+    }
+
+    #table-landscape tr:nth-child(odd) {
+        background-color: #abd8e9;
+    }
+
+    /* FOOTER */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -295,7 +373,7 @@ footer button {
         gap: 3rem 2rem;
     }
 
-    #social p, #chi-siamo p:first-child, footer form, footer form fieldset label, footer form fieldset input {
+    #social p, #footer-left p:first-child, footer form, footer form fieldset label, footer form fieldset input {
         margin: 0;
         padding: 0;
     }
@@ -308,5 +386,23 @@ footer button {
 }
 
 @media screen and (min-width: 1200px) {
+    /* INDEX */
+    #emoji {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
 
+    #emoji img {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+     /* CHI-SIAMO */
+     #table-landscape {
+        width: 100%;
+     }
 }
