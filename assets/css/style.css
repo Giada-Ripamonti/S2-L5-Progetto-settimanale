@@ -204,7 +204,7 @@ input#menu-button:checked ~ nav {
 
 /* MAIN - CHI SIAMO */
 
-#chi-siamo {
+#chi-siamo, #contatti {
     padding: 3.5rem 2rem;
     text-align: center;
 }
@@ -240,6 +240,39 @@ input#menu-button:checked ~ nav {
 
 #chi-siamo caption {
     padding: 1.5rem 0;
+}
+
+/* MAIN - CONTATTI */
+#contatti form fieldset {
+    padding: 2rem 0;
+}
+
+#contatti input, #contatti textarea {
+    border: 1px solid #aaa1a1;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 1px 0 #5e5a5ac5;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 90%;
+    color:#444040;
+    font-style: italic;
+}
+
+#contatti h2, #contatti p {
+    padding: 1rem 2rem;
+}
+
+#contatti a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contatti button a {
+    color: white;
+}
+
+#contatti address div {
+    padding: 2rem 0;
 }
 
 /* FOOTER */
@@ -363,6 +396,30 @@ footer button {
 
     #table-landscape tr:nth-child(odd) {
         background-color: #abd8e9;
+    }
+
+    /* CONTATTI */
+    #contatti section {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #contatti form {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    #contatti h1 {
+        padding: 1.5rem 0;
+    }
+
+    #contatti h2 {
+        padding: 0;
+    }
+
+    #contatti form fieldset {
+        padding: 0;
     }
 
     /* FOOTER */
